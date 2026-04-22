@@ -1,7 +1,11 @@
-#include <iostream>
+#include <SFML/Graphics.hpp>
 
 int main()
 {
-  std::cout << "Olá, mundo!" << '\n';
-  return 0;
+  sf::RenderWindow window;
+  sf::VideoMode dimension(1280, 720);
+
+  window.create(dimension, "Fundamentos Iniciais");
+  
+  return EXIT_SUCESS;
 }
